@@ -14,9 +14,15 @@ crop = st.selectbox(
 )
 
 if st.button("Check Disaster Risk"):
-    st.warning("Risk Level: Medium")
 
-    st.write("### Recommendations")
-    st.write("✅ Monitor weather updates")
-    st.write("✅ Keep irrigation ready")
-    st.write("✅ Protect crops from extreme weather")
+    st.metric("Flood Risk", "Medium")
+    st.metric("Heatwave Risk", "Low")
+    st.metric("Storm Risk", "High")
+
+    st.warning("Overall Risk Level: Medium")
+
+    st.write("### AI Recommendations")
+
+    st.success("Store seeds in a safe dry location")
+    st.success("Monitor local weather alerts")
+    st.success("Keep irrigation systems ready")
